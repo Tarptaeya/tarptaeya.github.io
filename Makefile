@@ -2,4 +2,4 @@ build:
 	python main.py
 
 serve:
-	cd out && python -m http.server
+	cd docs && python -m http.server

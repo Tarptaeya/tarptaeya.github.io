@@ -9,10 +9,10 @@ from pages import render_index_page
 if __name__ == "__main__":
     post_paths = ["posts/" + i for i in sorted([i for i in os.listdir("posts") if not i.startswith(".")], key=lambda x: int(x.split("-")[0]), reverse=True)]
     posts = [Post.from_path(path) for path in post_paths]
-    if os.path.exists("out"):
-        shutil.rmtree("out")
-    os.mkdir("out")
-    os.chdir("out")
+    if os.path.exists("docs"):
+        shutil.rmtree("docs")
+    os.mkdir("docs")
+    os.chdir("docs")
 
     # posts
     for post in posts:
