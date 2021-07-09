@@ -34,3 +34,6 @@ if __name__ == "__main__":
     # pages
     with open("index.html", "w") as f:
         render_index_page(f)
+
+    # CNAME
+    shutil.copyfile("../CNAME", "CNAME")
