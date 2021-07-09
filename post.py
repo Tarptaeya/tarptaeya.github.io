@@ -42,4 +42,4 @@ class Post:
     @classmethod
     def render_index(cls, f, posts):
         template = cls.environment.get_template("posts.html")
-        f.write(template.render(posts=posts))
+        f.write(template.render(posts=posts, title="All posts"))
