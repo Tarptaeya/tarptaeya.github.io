@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <style>{% include "index.css" %}</style>
+{% endblock %}
+
+{% block body %}
+    {% include "nav.html" %}
+
+    <div class="spacer"></div>
+
+    <div id="root">
+        <div id="about">
+            <div class="avatar">
+                <img src="https://github.com/tarptaeya.png" alt="profile image">
+            </div>
+            <div class="info">
+                <h1>Hey there, I am Anmol Gautam...</h1>
+                <p>
+                    I am currently working as a software engineer at HSBC.
+                </p>
+                <p>
+                    I am interested in compilers, computer graphics and machine learning. I also
+                    hold Tensorflow Developer certificate.
+                </p>
+                <p>
+                    I did my bachelors in computer science form IIT Gandhinagar (2016-2020).
+                    In 2018, I was selected in Google Summer of Code under KDE to implement
+                    JavaScript/QML extension support for Falkon. During my bachelors, I won
+                    several intra-college programming contests and also qualified 3 times for
+                    ACM-ICPC regionals.
+                </p>
+                <p>
+                    During lockdown, I purchased a piano, which I am currently learning to play.
+                    I hope that someday I will be able to play moonlight sonata (presto agitato).
+                </p>
+                <p>
+                    If you want to connect with me, just send an email to
+                    <a href="mailto:tarptaeya@gmail.com">tarptaeya@gmail.com</a>.
+                    I am also available on social media sites (GitHub, LinkedIn) with
+                    <em>tarptaeya</em> as my username.
+                </p>
+                <div class="buttons">
+                    <a class="github-button" href="https://github.com/tarptaeya" data-size="large" data-show-count="true" aria-label="Follow @tarptaeya on GitHub">Follow @tarptaeya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

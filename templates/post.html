@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <style>{% include "post.css" %}</style>
+{% endblock %}
+
+{% block content %}
+    <div class="post">
+        <h1 class="title">{{ title }}</h1>
+        <div class="content">{{ content }}</div>
+    </div>
+{% endblock %}

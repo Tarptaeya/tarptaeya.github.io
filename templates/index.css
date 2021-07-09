@@ -1,0 +1,21 @@
+#root {
+
+}
+
+#root #about {
+    display: flex;
+    padding: 22px;
+    text-align: justify;
+}
+
+#root #about .avatar {
+    max-width: 150px;
+    min-width: 150px;
+    margin-right: 22px;
+}
+
+#root #about img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <style>{% include "posts.css" %}</style>
+{% endblock %}
+
+{% block content %}
+    <div class="posts-container">
+        <h1>All Posts</h1>
+        <ol reversed>
+            {% for post in posts %}
+            <li class="post">
+                <div>
+                    <h2 class="title"><a href="/{{ post.get_slug() }}">{{ post.metadata["title"] }}</a></h2>
+                    <div>{{ post.get_published() }}</div>
+                    <div>{{ post.metadata["description"] }}</div>
+                </div>
+            </li>
+            {% endfor %}
+        </ol>
+    </div>
+{% endblock %}

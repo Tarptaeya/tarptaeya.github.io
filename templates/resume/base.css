@@ -1,0 +1,94 @@
+:root {
+  --body-size: 11px;
+  --title-size: 14px;
+  --section-title-size: 13px;
+}
+
+@page {
+  margin: 0.25in;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: var(--body-size);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-style: italic;
+}
+
+hr {
+  border: 0px;
+  border-top: 0.5px solid black;
+}
+
+table {
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+ul {
+  margin-top: 0;
+  padding-left: 2em;
+}
+
+#achievements .items .meta {
+  display: flex;
+}
+
+#achievements .items .meta .what {
+  flex: 1;
+}
+
+#achievements .items .meta .when {
+  font-style: italic;
+}
+
+#header {
+  display: flex;
+}
+
+#header .left {
+  flex: 1;
+}
+
+#header .name {
+  font-size: var(--title-size);
+  font-weight: 500;
+}
+
+.impact {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#other span.title {
+  text-decoration: underline;
+}
+
+.section.title {
+  font-size: var(--section-title-size);
+  border: 0.5px solid black;
+  background: #cfcfcf;
+  padding-left: 0.5em;
+}
+
+.section.item .info .about {
+  font-style: italic;
+}
+
+.section.item .meta {
+  display: flex;
+}
+
+.section.item .meta .title {
+  flex: 1;
+}
+
+.section.item .meta .when {
+  font-style: italic;
+}
+

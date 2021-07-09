@@ -1,0 +1,6 @@
+{
+  "title": "Eighth & Ninth week of coding phase, GSoC'18",
+  "published": "2018-07-15",
+  "tags": ["GSoC", "Falkon", "KDE"],
+  "description": "The third phase of coding period has begun. During this period, UserScript API, ExtensionScheme API and ability to register a QtObject as an external js object are developed."
+}
