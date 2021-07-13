@@ -1,9 +1,7 @@
 import os
 import shutil
-import subprocess
 
 from post import Post
-from resume import render_resume
 from pages import render_index_page
 
 if __name__ == "__main__":
@@ -24,12 +22,6 @@ if __name__ == "__main__":
 
     with open("posts/index.html", "w") as f:
         Post.render_index(f, posts)
-
-    # resume
-    with open("resume.html", "w") as f:
-        render_resume(f)
-    subprocess.call(["../convert_to_pdf.sh", "resume.html"])
-    os.remove("resume.html")
 
     # pages
     with open("index.html", "w") as f:
