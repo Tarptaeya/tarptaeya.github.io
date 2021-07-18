@@ -1,0 +1,6 @@
+{
+  "title": "Applying genetic algorithm to the game of Flappy bird.",
+  "published": "2021-07-18",
+  "tags": [],
+  "description": "In this post, I applied genetic algorithm to train a 3-5-1 neural network to play Flappy bird."
+}
