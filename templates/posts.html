@@ -7,16 +7,35 @@
 
 {% block content %}
     <div class="posts-container">
-        <h1>All posts</h1>
+        <h1>Posts</h1>
         <ol reversed>
             {% for post in posts %}
-            <li class="post">
-                <div>
-                    <h2 class="title"><a href="/{{ post.get_slug() }}">{{ post.metadata["title"] }}</a></h2>
-                    <div>{{ post.get_published() }}</div>
-                    <div>{{ post.metadata["description"] }}</div>
-                </div>
-            </li>
+                {% if not post.metadata.get("archived") %}
+                    <li class="post">
+                        <div>
+                            <h2 class="title"><a href="/{{ post.get_slug() }}">{{ post.metadata["title"] }}</a></h2>
+                            <div>{{ post.get_published() }}</div>
+                            <div>{{ post.metadata["description"] }}</div>
+                        </div>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ol>
+    </div>
+
+    <div class="posts-container">
+        <h1>Archived</h1>
+        <ol reversed>
+            {% for post in posts %}
+                {% if post.metadata.get("archived") %}
+                    <li class="post">
+                        <div>
+                            <h2 class="title"><a href="/{{ post.get_slug() }}">{{ post.metadata["title"] }}</a></h2>
+                            <div>{{ post.get_published() }}</div>
+                            <div>{{ post.metadata["description"] }}</div>
+                        </div>
+                    </li>
+                {% endif %}
             {% endfor %}
         </ol>
     </div>

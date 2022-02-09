@@ -2,6 +2,7 @@
   "title": "First week of coding phase, GSoC'18",
   "published": "2018-05-21",
   "tags": ["GSoC", "Falkon", "KDE"],
+  "archived": true,
   "description": "The work done this week focuses on three things - Enable loading/unloading of QML plugins in Falkon, Adding permission to existing plugin infrastructure for allowing plugin in incognito, and Developing QML Bookmarks API similar to WebExtension API.",
   "next": "/posts/2018/05/28/second-week-of-coding-phase-gsoc-18/"
 }

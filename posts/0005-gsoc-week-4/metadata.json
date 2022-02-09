@@ -2,5 +2,6 @@
   "title": "Fourth week of coding phase, GSoC'18",
   "published": "2018-06-11",
   "tags": ["GSoC", "Falkon", "KDE"],
+  "archived": true,
   "description": "The work done in this week was quite diverse  - writing documentation, fixing leaks and developing APIs."
 }

@@ -2,5 +2,6 @@
   "title": "Fifth week of coding phase, GSoC'18",
   "published": "2018-06-17",
   "tags": ["GSoC", "Falkon", "KDE"],
+  "archived": true,
   "description": "This includes developing GUI for QML Plugins. Two new APIs are introduced for this - BrowserAction API and SideBar API."
 }

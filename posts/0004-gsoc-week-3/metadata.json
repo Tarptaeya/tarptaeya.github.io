@@ -2,5 +2,6 @@
   "title": "Third week of coding phase, GSoC'18",
   "published": "2018-06-04",
   "tags": ["GSoC", "Falkon", "KDE"],
+  "archived": true,
   "description": "Clipboard API, Notifications API and Tabs API is introduced."
 }
