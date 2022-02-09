@@ -574,12 +574,24 @@ a {
     border-radius: 50%;
 }
 
+.repositories {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
 @media only screen and (max-width: 720px) {
     #root #about {
         flex-direction: column;
         align-items: center;
     }
+
+    .repositories {
+        grid-template-columns: 1fr;
+    }
 }</style>
+    <script src="https://tarptaeya.github.io/repo-card/repo-card.js"></script>
 
 </head>
 <body>
@@ -629,6 +641,10 @@ a {
                 <div class="buttons">
                     <a class="github-button" href="https://github.com/tarptaeya" data-size="large"
                        data-show-count="true" aria-label="Follow @tarptaeya on GitHub">Follow @tarptaeya</a>
+                </div>
+                <div class="repositories">
+                    <div class="repo-card" data-repo="tarptaeya/repo-card"></div>
+                    <div class="repo-card" data-repo="tarptaeya/path_tracer"></div>
                 </div>
             </div>
         </div>
