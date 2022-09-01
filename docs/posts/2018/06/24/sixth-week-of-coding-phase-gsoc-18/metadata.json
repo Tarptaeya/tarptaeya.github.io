@@ -3,5 +3,6 @@
   "published": "2018-06-24",
   "tags": ["GSoC", "Falkon", "KDE"],
   "archived": true,
+  "alternate": "sixth-week-of-coding-phase-gsoc18.html",
   "description": "A log of progress made in the sixth week of coding phase. This includes Menu API, Settings API and documentation of the APIs developed in previous weeks."
 }

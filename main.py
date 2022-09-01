@@ -20,6 +20,12 @@ if __name__ == "__main__":
         with open(slug + "/index.html", "w") as f:
             post.render(f)
         shutil.copytree("../" + post.metadata["path"], slug, dirs_exist_ok=True)
+        if "alternate" in post.metadata:
+            alternate = post.metadata["alternate"]
+            with open(alternate, "w") as f:
+                post.render(f)
+            ignore = lambda dir, fnames : [f for f in fnames if f.endswith('.json') or f.endswith('.md')]
+            shutil.copytree("../" + post.metadata["path"], ".", dirs_exist_ok=True, ignore=ignore)
 
     with open("posts/index.html", "w") as f:
         Post.render_index(f, posts)
