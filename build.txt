@@ -1,0 +1,7 @@
+npx prettier src/js/ --write
+
+# assumes that .env is the python virtual environment
+source .env/bin/activate
+pip freeze > requirements.txt
+python src/py/main.py
+
