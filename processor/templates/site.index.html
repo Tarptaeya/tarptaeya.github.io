@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{{ super() }}
+
+<style>{% include 'site.css' %}</style>
+
+{% endblock %}
+
+{% block body %}
+
+<main>
+    <div>{{ about }}</div>
+</main>
+
+{% endblock %}

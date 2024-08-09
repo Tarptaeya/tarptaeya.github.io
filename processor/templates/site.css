@@ -1,0 +1,52 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: cornsilk;
+    color: #404244;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",sans-serif;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 664px;
+    text-align: justify;
+    padding: 22px;
+}
+
+h1, h2, h3, h4, h5, h6, a, b {
+    color: chocolate;
+    font-weight: bold;
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-image-container > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    border: 4px solid chocolate;
+    box-sizing: border-box;
+}
+
+.profile-image-container > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image-container > div > a {
+    margin-bottom: 4px;
+}
