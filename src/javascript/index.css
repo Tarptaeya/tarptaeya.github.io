@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+}
+
+a {
+  font-weight: bold;
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#root {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.about {
+  padding: 22px;
+  margin-top: 22px;
+}
+
+.about img {
+  max-width: 186px;
+  max-height: 186px;
+  border-radius: 18px;
+}
+
+.about-info {
+  text-align: justify;
+}
+
+.about-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 14px;
+  padding-right: 22px;
+}
+
+.about-photo-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fluid {
+  display: flex;
+}
+
+.footer {
+  font-size: 13px;
+  color: rgb(15, 20, 25);
+  border-top: 1px solid rgb(15, 20, 25);
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 22px;
+  margin-top: 22px;
+}
+
+.footer a {
+  color: inherit;
+  font-weight: inherit;
+}
+
+.footer-copyright {
+  text-align: right;
+  padding-top: 4px;
+  flex: 1;
+}
+
+.footer-list {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+}
+
+.footer-list > div {
+  padding: 4px;
+  min-width: 64px;
+}
+
+.latest-post-list {
+  padding: 22px;
+}
+
+.page {
+  max-width: 1024px;
+  display: flex;
+}
+
+.post-container {
+  padding: 22px;
+  text-align: justify;
+}
+
+.post-date {
+    font-size: 13px;
+    color: rgb(15, 20, 25);
+}
+
+.post-list-container > ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.post-list-container li {
+  margin-bottom: 22px;
+}
+
+.post-list-item-description {
+  text-align: justify;
+}
+
+.post-page-container {
+  display: flex;
+}
+
+.repo-card-container {
+  padding: 22px;
+}
+
+.repo-card-list {
+  display: grid;
+  grid-gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  grid-auto-rows: 1fr;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.repo-card-list > div {
+  display: flex;
+}
+
+.repo-card-list > div > div {
+  flex: 1;
+}
+
+.sidebar {
+  min-width: 200px;
+  padding: 22px;
+  font-size: 13px;
+  color: rgb(15, 20, 25);
+}
+
+.sidebar-aboutme {
+  text-align: justify;
+}
+
+.sidebar-photo {
+  display: flex;
+  align-items: start;
+}
+
+.sidebar-photo img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  margin-right: 22px;
+}
+
+@media only screen and (max-width: 640px) {
+  .about {
+    flex-wrap: wrap;
+  }
+
+  .about-photo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  .post-page-container {
+      flex-wrap: wrap;
+  }
+
+  .sidebar-photo img {
+      margin-left: 0;
+  }
+}
