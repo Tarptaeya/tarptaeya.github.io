@@ -23,7 +23,7 @@ export default function Post(props) {
     <div className="post-container">
       <h1 className="post-title">{post.title}</h1>
       <div className="post-date">
-      <p>{ post.published_at }</p>
+        <p>{post.published_at}</p>
       </div>
       <div
         dangerouslySetInnerHTML={{ __html: post.content }}

@@ -17,15 +17,15 @@ export default function SideBar() {
           software engineer at Meta. I am currently learning game development as
           a hobby.
         </p>
-          <GitHubButton
-            href="https://github.com/tarptaeya"
-            data-color-scheme="no-preference: light; light: light; dark: dark;"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Follow @tarptaeya on GitHub"
-          >
-            Follow @tarptaeya
-          </GitHubButton>
+        <GitHubButton
+          href="https://github.com/tarptaeya"
+          data-color-scheme="no-preference: light; light: light; dark: dark;"
+          data-size="large"
+          data-show-count="true"
+          aria-label="Follow @tarptaeya on GitHub"
+        >
+          Follow @tarptaeya
+        </GitHubButton>
       </div>
     </div>
   );

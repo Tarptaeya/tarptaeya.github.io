@@ -116,8 +116,8 @@ a:hover {
 }
 
 .post-date {
-    font-size: 13px;
-    color: rgb(15, 20, 25);
+  font-size: 13px;
+  color: rgb(15, 20, 25);
 }
 
 .post-list-container > ul {
@@ -195,10 +195,10 @@ a:hover {
   }
 
   .post-page-container {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .sidebar-photo img {
-      margin-left: 0;
+    margin-left: 0;
   }
 }

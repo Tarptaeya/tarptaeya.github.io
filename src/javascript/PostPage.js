@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import Post from "./Post";
 import Footer from "./Footer";
 import SideBar from "./SideBar";
-import LatestPostList from './LatestPostList';
+import LatestPostList from "./LatestPostList";
 
 export default function PostPage() {
   const { id } = useParams();

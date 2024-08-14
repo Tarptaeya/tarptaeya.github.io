@@ -98,7 +98,7 @@ def main():
             arr.append(x)
         data = {'posts': arr, 'next': None}
         if i + 1 < num_chunks:
-            data['next'] = '/static/api/posts_%d.json' % (i + 1)
+            data['next'] = '/api/posts_%d.json' % (i + 1)
         with open(os.path.join(API_PATH, 'posts_%d.json' % i), 'w') as f:
             f.write(json.dumps(data))
 

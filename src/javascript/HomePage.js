@@ -3,7 +3,7 @@ import axios from "axios";
 import About from "./About";
 import RepoCardList from "./RepoCardList";
 import Footer from "./Footer";
-import LatestPostList from './LatestPostList';
+import LatestPostList from "./LatestPostList";
 
 export default function HomePage() {
   return (

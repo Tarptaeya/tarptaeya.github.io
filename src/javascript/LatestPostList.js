@@ -4,13 +4,13 @@ import PostList from "./PostList";
 
 export default function LatestPostList(props) {
   const [posts, setPosts] = useState([]);
-    const postsToExclude = props.postsToExclude ?? [];
+  const postsToExclude = props.postsToExclude ?? [];
 
   useEffect(() => {
     (async function fetchData() {
       const resp = await axios.get("/api/posts_0.json");
-        const posts = resp?.data?.posts ?? [];
-      setPosts(posts.filter(p => !postsToExclude.includes(p.slug)));
+      const posts = resp?.data?.posts ?? [];
+      setPosts(posts.filter((p) => !postsToExclude.includes(p.slug)));
     })();
   }, []);
 
@@ -21,5 +21,3 @@ export default function LatestPostList(props) {
     </div>
   );
 }
-
-

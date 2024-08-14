@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./HomePage";
 import PostPage from "./PostPage";
-import AllPostsPage from './AllPostsPage';
+import AllPostsPage from "./AllPostsPage";
 import "./index.css";
 
 const router = createHashRouter([
@@ -15,10 +15,10 @@ const router = createHashRouter([
     path: "post/:id",
     element: <PostPage />,
   },
-    {
-        path: "/all-posts",
-        element: <AllPostsPage />
-    },
+  {
+    path: "/all-posts",
+    element: <AllPostsPage />,
+  },
 ]);
 
 const root = createRoot(document.getElementById("root"));
