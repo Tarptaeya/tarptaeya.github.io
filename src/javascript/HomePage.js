@@ -6,6 +6,9 @@ import Footer from "./Footer";
 import LatestPostList from "./LatestPostList";
 
 export default function HomePage() {
+  useEffect(() => {
+    document.title = "About Me - @tarptaeya";
+  }, []);
   return (
     <div className="page">
       <div className="main-container">

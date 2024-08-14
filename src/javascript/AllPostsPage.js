@@ -8,6 +8,10 @@ export default function HomePage() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
+    document.title = "All Posts - @tarptaeya";
+  }, []);
+
+  useEffect(() => {
     (async () => {
       const resp = await axios.get(nextURL);
       const newPosts = resp?.data?.posts ?? [];
@@ -22,10 +26,10 @@ export default function HomePage() {
   return (
     <div className="page">
       <div className="main-container">
-      <div className="all-posts-page-container">
-        <h3>All Posts</h3>
-        <PostList posts={posts} />
-      </div>
+        <div className="all-posts-page-container">
+          <h3>All Posts</h3>
+          <PostList posts={posts} />
+        </div>
         <Footer />
       </div>
     </div>

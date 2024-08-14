@@ -62,7 +62,7 @@ a:hover {
 }
 
 .all-posts-page-container {
-    padding: 22px;
+  padding: 22px;
 }
 
 .fluid {
@@ -199,12 +199,12 @@ a:hover {
   }
 
   .about-photo img {
-      max-width: 126px;
-      max-height: 126px;
+    max-width: 126px;
+    max-height: 126px;
   }
 
   .about-photo-buttons {
-      display: none;
+    display: none;
   }
 
   .post-page-container {
