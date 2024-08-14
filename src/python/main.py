@@ -17,6 +17,7 @@ class Post:
         self.published_at = metadata['published']
         self.slug = metadata.get('slug', create_slug(metadata))
         self.description = metadata['description']
+        self.alternate = metadata.get('alternate')
         self.content = content
 
     def __lt__(self, other):
@@ -106,6 +107,9 @@ def main():
         data = {'title': p.title, 'published_at': p.published_at, 'content': p.content}
         with open(os.path.join(API_PATH, '%s.json' % p.slug), 'w') as f:
             f.write(json.dumps(data))
+        if p.alternate:
+            with open(os.path.join(ASSET_PATH, p.alternate), 'w') as f:
+                f.write('<script>window.location = "/#/post/%s"</script>' % p.slug)
 
 
 
