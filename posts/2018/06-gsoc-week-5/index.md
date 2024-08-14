@@ -15,6 +15,7 @@ The week was totally involved in developing the **GUI** for QML Plugins. The fol
 Below are the screeshots of the [Hello QML plugin](https://cgit.kde.org/falkon.git/tree/src/scripts/helloqml?h=anmolgautam) from my working [branch](https://cgit.kde.org/falkon.git/log/?h=anmolgautam)
 ## BrowserAction Button
 Browser Action Button can be added to either Navigation Tool Bar or Status Bar or both.
+
 ![Browser_Action_Button](browser_action_button.png)
 
 ## BrowserAction Popup
@@ -25,13 +26,16 @@ The popup for Browser Action Button is in form of [QML Window](http://doc.qt.io/
 - Now to show popup the Qt::Popup flag is needed for QQuickWindow.
 
 Everything is fine upto this until I found that this didn't worked. My Mentor (David Rosca) explained that this is because the QWindow is not grabing mouse and keyboard events - which means that the window is not activated - so I added QWindow::requestActivate and It works like a charm!
+
 ![Browser_Action_Popup](browser_action_popup.png)
 
 ## SideBar Menu
+
 ![SideBar_Menu](sidebar_menu.png)
 
 ## SideBar
 Again SideBar menu is a QQuickWindow which is embeded into the browser using QWidget::createWindowContainer.
+
 ![SideBar](sidebar.png)
 
 <hr/>

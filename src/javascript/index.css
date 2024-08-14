@@ -6,6 +6,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  word-break: break-all;
 }
 
 h1,
@@ -116,7 +117,6 @@ a:hover {
 
 .post-container {
   padding: 22px;
-  text-align: justify;
 }
 
 .post-date {
@@ -135,7 +135,6 @@ a:hover {
 }
 
 .post-list-item-description {
-  text-align: justify;
 }
 
 .post-page-container {

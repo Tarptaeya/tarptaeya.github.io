@@ -12,9 +12,9 @@ The week was totally involved in developing QML APIs similar to WebExtension API
 .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
 .tg .tg-s6z2{text-align:center}
-.tg .tg-031e{max-width:250px; min-width:250px}
-.tg .tg-6agk{color:#34ff34;text-align:center;max-width:100px; min-width:100px}
-.tg .tg-yjsh{color:#fe0000;text-align:center;max-width:100px; min-width:100px}
+.tg .tg-031e{max-width:250px;}
+.tg .tg-6agk{color:#34ff34;text-align:center;max-width:100px;}
+.tg .tg-yjsh{color:#fe0000;text-align:center;max-width:100px;}
 </style>
 <table class="tg">
   <tr>

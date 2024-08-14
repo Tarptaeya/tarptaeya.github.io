@@ -13,7 +13,15 @@ This is also a very short API - just with one method create, enabling creation o
 ### Tabs API
 API consumed a humongous time of both me and my mentor David. This exposes the Falkon c++ methods of TabWidget class as singleton Falkon.Tabs and methods of WebTab class as uncreatable type Falkon.Tab. 
 <center>
+<style>
+img {
+width: 80%;
+height: auto;
+}
+</style>
+
 ![No compatibility table this time](meme_week_3.jpg)
+
 </center>
 
 This time I am not including the WebExtension compatibility table as the APIs developed are not similar to the WebExtension APIs.

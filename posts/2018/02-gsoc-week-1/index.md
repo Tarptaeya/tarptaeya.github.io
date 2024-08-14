@@ -8,8 +8,18 @@ This week was mainly focused on three things
 QML plugins will now be loaded into Falkon from the subdirectory qml in the standard plugin paths, similar to Python plugins. Also in metadata.desktop file for plugin, the main entry file (QML) can be specified so that the plugin named X can have the entry file Y.qml. 
 ## Adding permission to existing plugin infrastructure for allowing plugin in incognito
 Plugins will now support permission to allow them in incognito mode. Also the information for plugins is moved from ini files to sql database.
+<center>
+<style>
+img {
+width: 80%;
+height: auto;
+}
+</style>
 
 ![Falkon_Preference](falkon_preference.svg)
+
+</center>
+
 ## Developing QML Bookmarks API similar to WebExtension API
 The following table demonstrates the browser compatibility of WebExtension API for Falkon compared with other browsers.
 

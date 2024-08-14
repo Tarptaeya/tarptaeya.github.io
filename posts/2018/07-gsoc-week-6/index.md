@@ -6,16 +6,28 @@ Woo.. this is the 6th weekly post - the midway of GSoC (12 weeks). In this 6th w
 
 - Settings API: The API to store settings in form of Key-Value pair for plugins
 
+<style>
+img {
+width: 80%;
+height: auto;
+}
+</style>
+
+
 ## Menus API
 The Menus API enables the QML Plugin to add an action, separator or menu to the WebView context menu. This API is not similar to the WebExtensions Menus API but is rather Falkonish!
 <center>
+
 ![Context menu on image](menu_on_input.png)
+
 </center>
 
 ## Settings API
 The Settings API enables the QML Plugin to store settings as key-value pairs and uses QSettings to store the data. Developing this API was interesting because it led to a bug-fix (bug was in my previous work) and enabling creating child items in QmlPluginInterface.
 <center>
+
 ![Plugin's settings window](plugins_settings_window.png)
+
 </center>
 
 <br/>
