@@ -61,6 +61,10 @@ a:hover {
   align-items: center;
 }
 
+.all-posts-page-container {
+    padding: 22px;
+}
+
 .fluid {
   display: flex;
 }
@@ -192,6 +196,15 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     flex: 1;
+  }
+
+  .about-photo img {
+      max-width: 126px;
+      max-height: 126px;
+  }
+
+  .about-photo-buttons {
+      display: none;
   }
 
   .post-page-container {
